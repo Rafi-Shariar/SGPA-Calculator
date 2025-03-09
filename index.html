@@ -51,10 +51,10 @@
     <div class="w-11/12 md:w-9/12 mx-auto mt-10">
 
         <!-- Course Details -->
-      <div class="flex flex-col md:flex-row md:justify-around justify-center p-3 md:p-8 rounded-2xl shadow-xl">
+      <div class="flex flex-col lg:flex-row md:justify-around justify-center p-3 md:p-8 rounded-2xl shadow-xl">
         <!-- Course Type  -->
         <div class="flex gap-4  items-center mb-5 md:mb-0">
-            <h1 class="text-lg md:text-2xl font-semibold">Course Type:</h1>
+            <h1 class="text-lg md:text-xl font-semibold">Course Type:</h1>
 
             <label class="flex items-center space-x-2 ml-4 md:ml-0 md:text-xl">
                 <input type="radio" name="course_type" value="theory" checked class="rounded-lg" id="theoryRadio">
@@ -71,8 +71,8 @@
         </div>
          <!-- Course name -->
          <div class="flex gap-4 items-center mb-5 md:mb-0">
-            <label for="" class="text-lg md:text-2xl font-semibold">Course Name :</label>
-            <input type="text" / class="rounded-lg p-1 w-[170px] md:w-[250px]" placeholder="" id="CourseName">
+            <label for="" class="text-lg md:text-xl font-semibold">Course Name :</label>
+            <input type="text" / class="rounded-lg p-1 w-[150px] md:w-[150px] " placeholder="" id="CourseName">
           </div>
 
          
@@ -85,47 +85,47 @@
               <!-- Attendance -->
               <div class="flex justify-between items-center border-2 p-5 rounded-lg">
                   <div class="flex gap-5 items-center">
-                      <img src="./images/Attendence.png" alt="" class="w-7 md:w-12">
-                      <h1 class="text-lg md:text-4xl font-semibold">Attendance</h1>
+                      <img src="./images/Attendence.png" alt="" class="w-7 md:w-10">
+                      <h1 class="text-lg md:text-2xl font-semibold">Attendance</h1>
                   </div>
-                  <input type="number" placeholder="? / 100%" class="text-center w-[100px] md:w-[180px] p-2 rounded-lg border-2" required id="Attendance">
+                  <input type="number" placeholder="? / 100%" class="text-center w-[80px] p-2 rounded-lg border-2" required id="Attendance">
               </div>
       
               <!-- Assignments -->
               <div class="flex justify-between items-center border-2 p-5 rounded-lg">
                   <div class="flex gap-5 items-center">
-                      <img src="./images/assignment.png" alt="" class="w-7 md:w-12">
-                      <h1 class="text-lg md:text-4xl font-semibold">Assignments</h1>
+                      <img src="./images/assignment.png" alt="" class="w-7 md:w-10">
+                      <h1 class="text-lg md:text-2xl font-semibold">Assignments</h1>
                   </div>
-                  <input type="number" placeholder="? / 5" class="text-center w-[100px] md:w-[180px] p-2 rounded-lg border-2" required id="Assignments">
+                  <input type="number" placeholder="? / 5" class="text-center w-[80px]  p-2 rounded-lg border-2" required id="Assignments">
               </div>
       
               <!-- Presentation -->
               <div class="flex justify-between items-center border-2 p-5 rounded-lg">
                   <div class="flex gap-5 items-center">
-                      <img src="./images/presentation.png" alt="" class="w-7 md:w-12">
-                      <h1 class="text-lg md:text-4xl font-semibold">Presentation</h1>
+                      <img src="./images/presentation.png" alt="" class="w-7 md:w-10">
+                      <h1 class="text-lg md:text-2xl font-semibold">Presentation</h1>
                   </div>
-                  <input type="number" placeholder="? / 8" class="text-center w-[100px] md:w-[180px] p-2 rounded-lg border-2" required id="Presentation">
+                  <input type="number" placeholder="? / 8" class="text-center w-[80px]  p-2 rounded-lg border-2" required id="Presentation">
               </div>
       
               <!-- Quiz Average -->
               <div class="flex justify-between items-center border-2 p-5 rounded-lg">
                   <div class="flex gap-5 items-center">
-                      <img src="./images/speech-bubble.png" alt="" class="w-7 md:w-12">
-                      <h1 class="text-lg md:text-4xl font-semibold">Quiz Average</h1>
+                      <img src="./images/speech-bubble.png" alt="" class="w-7 md:w-10">
+                      <h1 class="text-lg md:text-2xl font-semibold">Quiz Average</h1>
                   </div>
-                  <input type="number" placeholder="? / 15" class="text-center w-[100px] md:w-[180px] p-2 rounded-lg border-2" required id="Quiz">
+                  <input type="number" placeholder="? / 15" class="text-center w-[80px]  p-2 rounded-lg border-2" required id="Quiz">
               </div>
       
               <!-- Mid-Exam -->
               <div class="md:col-span-2">
                 <div class="flex justify-evenly items-center border-2 p-5 rounded-lg">
                   <div class="flex gap-5 items-center">
-                      <img src="./images/exam.png" alt="" class="w-7 md:w-12">
-                      <h1 class="text-lg md:text-4xl font-semibold">Mid - Exam</h1>
+                      <img src="./images/exam.png" alt="" class="w-7 md:w-10">
+                      <h1 class="text-lg md:text-2xl font-semibold">Mid - Exam</h1>
                   </div>
-                  <input type="number" placeholder="? / 25" class="text-center w-[100px] md:w-[180px] p-2 rounded-lg border-2" required id="Mid">
+                  <input type="number" placeholder="? / 25" class="text-center w-[80px]  p-2 rounded-lg border-2" required id="Mid">
               </div>
               </div>
           </div>
@@ -138,42 +138,42 @@
       
 
        <!-- Info Container - Lab -->
-               <div class="mt-16 hidden" id="infoLab">
+       <div class="mt-16 hidden" id="infoLab">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
               <!-- Attendance -->
-              <div class="flex justify-between items-center border-2 p-5 rounded-lg">
+              <div class="flex justify-between items-center border-2 p-5 rounded-lg ">
                   <div class="flex gap-5 items-center">
-                      <img src="./images/Attendence.png" alt="" class="w-7 md:w-12">
-                      <h1 class="text-lg md:text-4xl font-semibold">Attendance</h1>
+                      <img src="./images/Attendence.png" alt="" class="w-7 md:w-10">
+                      <h1 class="text-lg md:text-2xl font-semibold">Attendance</h1>
                   </div>
-                  <input type="number" placeholder="? / 100%" class="text-center w-[100px] md:w-[180px] p-2 rounded-lg border-2" required id="LabAttendence">
+                  <input type="number" placeholder="? / 100%" class="text-center w-[80px]  p-2 rounded-lg border-2" required id="LabAttendence">
               </div>
       
               <!-- Lab Performance -->
               <div class="flex justify-between items-center border-2 p-5 rounded-lg">
                   <div class="flex gap-5 items-center">
-                      <img src="./images/assignment.png" alt="" class="w-7 md:w-12">
-                      <h1 class="text-lg md:text-4xl font-semibold">Lab Performance</h1>
+                      <img src="./images/assignment.png" alt="" class="w-7 md:w-10">
+                      <h1 class="text-lg md:text-2xl font-semibold">Lab Performance</h1>
                   </div>
-                  <input type="number" placeholder="? / 25" class="text-center w-[100px] md:w-[180px] p-2 rounded-lg border-2" required id="LabPer">
+                  <input type="number" placeholder="? / 25" class="text-center w-[80px]  p-2 rounded-lg border-2" required id="LabPer">
               </div>
       
               <!-- Lab Report -->
               <div class="flex justify-between items-center border-2 p-5 rounded-lg">
                   <div class="flex gap-5 items-center">
-                      <img src="./images/exam.png" alt="" class="w-7 md:w-12">
-                      <h1 class="text-lg md:text-4xl font-semibold">Lab Report</h1>
+                      <img src="./images/exam.png" alt="" class="w-7 md:w-10">
+                      <h1 class="text-lg md:text-2xl font-semibold">Lab Report</h1>
                   </div>
-                  <input type="number" placeholder="? / 25" class="text-center w-[100px] md:w-[180px] p-2 rounded-lg border-2" required id="LabRep">
+                  <input type="number" placeholder="? / 25" class="text-center w-[80px]  p-2 rounded-lg border-2" required id="LabRep">
               </div>
       
               <!-- Project -->
               <div class="flex justify-between items-center border-2 p-5 rounded-lg">
                   <div class="flex gap-5 items-center">
-                      <img src="./images/speech-bubble.png" alt="" class="w-7 md:w-12">
-                      <h1 class="text-lg md:text-4xl font-semibold">Project</h1>
+                      <img src="./images/speech-bubble.png" alt="" class="w-7 md:w-10">
+                      <h1 class="text-lg md:text-2xl font-semibold">Project</h1>
                   </div>
-                  <input type="number" placeholder="? / 40" class="text-center w-[100px] md:w-[180px] p-2 rounded-lg border-2" required id="Project">
+                  <input type="number" placeholder="? / 40" class="text-center w-[80px]  p-2 rounded-lg border-2" required id="Project">
               </div>
           </div>
       
@@ -194,120 +194,7 @@
             <h1 class="font-semibold text-xl md:text-5xl">Expected Grade in <Span>Course</Span></h1>
             
             <!-- Grading -->
-             <div class="md:w-10/12 mx-auto bg-white md:p-10 p-2 md:mt-8 mt-4  rounded-lg md:rounded-l-3xl md:rounded-b-3xl">
-                <!-- 4.00 -->
-            <div class="flex justify-between md:justify-around mt-5 border-b-2 pb-2 shadow-xl items-center">
-              <h1 class="flex flex-wrap  gap-2 md:gap-10 md:text-2xl items-center">
-                <span>For</span> 
-                <span class="font-bold text-base text-lg md:text-3xl">4.00</span> 
-                <span>you need</span> 
-                <span class="font-bold text-base text-lg md:text-3xl">3.56</span> 
-                <span>marks</span>
-              </h1>
-
-              <button class="btn">add</button>
-            
-            </div>
-
-             <!-- 3.75 -->
-             <div class="flex justify-between md:justify-around mt-5 border-b-2 pb-2 shadow-xl items-center">
-              <h1 class="flex flex-wrap  gap-2 md:gap-10 md:text-2xl items-center">
-                <span>For</span> 
-                <span class="font-bold text-base text-lg md:text-3xl">3.75</span> 
-                <span>you need</span> 
-                <span class="font-bold text-base text-lg md:text-3xl">3.56</span> 
-                <span>marks</span>
-              </h1>
-
-              <button class="btn">add</button>
-            
-            </div>
-
-             <!-- 3.50 -->
-             <div class="flex justify-between md:justify-around mt-5 border-b-2 pb-2 shadow-2xl items-center">
-              <h1 class="flex flex-wrap  gap-2 md:gap-10 md:text-2xl items-center">
-                <span>For</span> 
-                <span class="font-bold text-base text-lg md:text-3xl">3.50</span> 
-                <span>you need</span> 
-                <span class="font-bold text-base text-lg md:text-3xl">3.56</span> 
-                <span>marks</span>
-              </h1>
-
-              <button class="btn">add</button>
-            
-            </div>
-
-             <!-- 3.25 -->
-             <div class="flex justify-between md:justify-around mt-5 border-b-2 pb-2 shadow-2xl items-center">
-              <h1 class="flex flex-wrap  gap-2 md:gap-10 md:text-2xl items-center">
-                <span>For</span> 
-                <span class="font-bold text-base text-lg md:text-3xl">3.25</span> 
-                <span>you need</span> 
-                <span class="font-bold text-base text-lg md:text-3xl">3.56</span> 
-                <span>marks</span>
-              </h1>
-
-              <button class="btn">add</button>
-            
-            </div>
-
-             <!-- 3.00 -->
-             <div class="flex justify-between md:justify-around mt-5 border-b-2 pb-2 shadow-2xl items-center">
-              <h1 class="flex flex-wrap  gap-2 md:gap-10 md:text-2xl items-center">
-                <span>For</span> 
-                <span class="font-bold text-base text-lg md:text-3xl">3.00</span> 
-                <span>you need</span> 
-                <span class="font-bold text-base text-lg md:text-3xl">3.56</span> 
-                <span>marks</span>
-              </h1>
-
-              <button class="btn">add</button>
-            
-            </div>
-
-
-             <!-- 2.75 -->
-             <div class="flex justify-between md:justify-around mt-5 border-b-2 pb-2 shadow-2xl items-center">
-              <h1 class="flex flex-wrap  gap-2 md:gap-10 md:text-2xl items-center">
-                <span>For</span> 
-                <span class="font-bold text-base text-lg md:text-3xl">2.75</span> 
-                <span>you need</span> 
-                <span class="font-bold text-base text-lg md:text-3xl">3.56</span> 
-                <span>marks</span>
-              </h1>
-
-              <button class="btn">add</button>
-            
-            </div>
-
-             <!-- 2.50 -->
-             <div class="flex justify-between md:justify-around mt-5 border-b-2 pb-2 shadow-2xl items-center">
-              <h1 class="flex flex-wrap  gap-2 md:gap-10 md:text-2xl items-center">
-                <span>For</span> 
-                <span class="font-bold text-base text-lg md:text-3xl">2.50</span> 
-                <span>you need</span> 
-                <span class="font-bold text-base text-lg md:text-3xl">3.56</span> 
-                <span>marks</span>
-              </h1>
-
-              <button class="btn">add</button>
-            
-            </div>
-
-             <!-- 2.00 -->
-             <div class="flex justify-between md:justify-around mt-5 border-b-2 pb-2 shadow-2xl items-center">
-              <h1 class="flex flex-wrap  gap-2 md:gap-10 md:text-2xl items-center">
-                <span>For</span> 
-                <span class="font-bold text-base text-lg md:text-3xl">2.00</span> 
-                <span>you need</span> 
-                <span class="font-bold text-base text-lg md:text-3xl">3.56</span> 
-                <span>marks</span>
-              </h1>
-
-              <button class="btn">add</button>
-            
-            </div>
-             </div>
+             
 
           
 
