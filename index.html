@@ -131,9 +131,7 @@
           </div>
       
           <!-- Button -->
-          <div class="text-center mt-7">
-              <button class="btn bg-green-700 text-white px-5 py-2 rounded-lg">Calculate Grade</button>
-          </div>
+          
         </div>
       
 
@@ -178,27 +176,119 @@
           </div>
       
           <!-- Button -->
-          <div class="text-center mt-7">
-              <button class="btn bg-green-700 text-white px-5 py-2 rounded-lg">Calculate Grade</button>
-          </div>
+          
       
 
       
       
        </div>
 
+       <div class="text-center mt-7">
+        <button class="btn bg-green-700 text-white px-5 py-2 rounded-lg" id="GradCalBtn">Calculate Grade</button>
+       </div>
+
 
 
        <!-- Grade Selector -->
         <div class="mt-5 p-2 md:p-14  rounded-lg bg-slate-300 ">
-            <h1 class="font-semibold text-xl md:text-5xl">Expected Grade in <Span>Course</Span></h1>
+            <h1 class="font-semibold text-xl md:text-3xl">Expected Grade in <Span>Course</Span></h1>
             
             <!-- Grading -->
-             
+             <div class="mt-7">
+              <h2 class="text-center"> <span class="loading loading-dots loading-lg"></span></h2>
+              <div class="overflow-x-auto rounded-box  border border-base-content/5 bg-base-200 mt-4 hidden">
+                <table class="table ">
+                  <!-- head -->
+                  <thead class="lg:text-base border-b-2 md:text-center">
+                    <tr>
+                      <th>Point</th>
+                      <th>Grade</th>
+                      <th>Marks in final</th>
+                      <th>Add to SGPA</th>
+                    </tr>
+                  </thead>
+                  <tbody class="lg:text-base md:text-center">
+                    <!-- 4.00 -->
+                    <tr>
+                      <th>4.00</th>
+                      <td>A+</td>
+                      <td>47.00</td>
+                      <td><button class="btn bg-slate-200 border-2 border-slate-500 ">add</button></td>
+                    </tr>
+                    <!-- 3.75 -->
+                    <tr>
+                      <th>3.75</th>
+                      <td>A</td>
+                      <td>47.00</td>
+                      <td><button class="btn bg-slate-200 border-2 border-slate-500">add</button></td>
+                    </tr>
+
+
+                      <!-- 3.50 -->
+                      <tr>
+                        <th>3.50</th>
+                        <td>A-</td>
+                        <td>47.00</td>
+                        <td><button class="btn bg-slate-200 border-2 border-slate-500">add</button></td>
+                      </tr>
+
+                       <!-- 3.25 -->
+                       <tr>
+                        <th>3.25</th>
+                        <td>B+</td>
+                        <td>47.00</td>
+                        <td><button class="btn bg-slate-200 border-2 border-slate-500">add</button></td>
+                      </tr>
+
+
+                       <!-- 3.00 -->
+                       <tr>
+                        <th>3.00</th>
+                        <td>B</td>
+                        <td>47.00</td>
+                        <td><button class="btn bg-slate-200 border-2 border-slate-500">add</button></td>
+                      </tr>
+
+                       <!-- 2.75 -->
+                       <tr>
+                        <th>2.75</th>
+                        <td>B-</td>
+                        <td>47.00</td>
+                        <td><button class="btn bg-slate-200 border-2 border-slate-500">add</button></td>
+                      </tr>
+
+                       <!-- 2.50 -->
+                       <tr>
+                        <th>2.50</th>
+                        <td>C+</td>
+                        <td>47.00</td>
+                        <td><button class="btn bg-slate-200 border-2 border-slate-500">add</button></td>
+                      </tr>
+
+                       <!-- 3.50 -->
+                       <tr>
+                        <th>2.25</th>
+                        <td>C</td>
+                        <td>47.00</td>
+                        <td><button class="btn bg-slate-200 border-2 border-slate-500">add</button></td>
+                      </tr>
+
+                       <!-- 3.50 -->
+                       <tr>
+                        <th>2.00</th>
+                        <td>D</td>
+                        <td>47.00</td>
+                        <td><button class="btn bg-slate-200 border-2 border-slate-500">add</button></td>
+                      </tr>
+                   
+                  </tbody>
+                </table>
+              </div>
+             </div>
 
           
 
-           
+          
 
         </div>
 
@@ -206,40 +296,52 @@
         <!-- SGPA Calculator -->
          <div class="mt-7">
 
-          <h1 class="font-semibold text-xl md:text-5xl">SGPA</h1>
+          <h1 class="font-semibold text-xl md:text-3xl">SGPA</h1>
 
           <!-- SGPA Table -->
-           <div>
+           <div class="mb-10">
 
             <div class="overflow-x-auto">
-              <table class="table md:p-7">
+             
+              <table class="table md:p-7 md:text-center">
                 <!-- head -->
+               
                 <thead>
                   <tr>
                     <th>Course</th>
-                    <th>Credit</th>
+                    <th>Credit</th> 
                     <th>Grade</th>
+                    <th>point</th>
                   </tr>
                 </thead>
+               
                 <tbody>
+                  
                   <!-- row 1 -->
-                  <tr>
-                    <td>Cy Ganderton</td>
-                    <td>Quality Control Specialist</td>
-                    <td>Blue</td>
+                  <!-- <tr>
+                    <td>FMA</td>
+                    <td>3.00</td>
+                    <td>A-</td>
+                    <td>4.98</td>
                   </tr>
-                  <!-- row 2 -->
+
                   <tr>
-                    <td>Hart Hagerty</td>
-                    <td>Desktop Support Technician</td>
-                    <td>Purple</td>
-                  </tr>
+                    <td>FMA</td>
+                    <td>3.00</td>
+                    <td>A-</td>
+                    <td>4.98</td>
+                  </tr> -->
+                 
                   
                 </tbody>
               </table>
             </div>
 
            </div>
+
+           <!-- <div class="w-full h-12 bg-slate-400">
+
+           </div> -->
           
          </div>
 
