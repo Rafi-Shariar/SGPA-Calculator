@@ -3,11 +3,14 @@
 document.getElementById(`theoryRadio`).addEventListener('click',function(){
     document.getElementById(`infoTheory`).classList.remove(`hidden`);
     document.getElementById(`infoLab`).classList.add(`hidden`);
+    document.getElementById(`gradeSheetLab`).classList.add(`hidden`);
 });
 
 document.getElementById(`LabRadio`).addEventListener('click',function(){
     document.getElementById(`infoTheory`).classList.add(`hidden`);
     document.getElementById(`infoLab`).classList.remove(`hidden`);
+    document.getElementById(`gradeSheet`).classList.add(`hidden`);
+   
 
 });
 
@@ -88,6 +91,83 @@ document.getElementById(`GradCalBtn`).addEventListener(`click`,function(){
         
         
         
+    }
+    else{
+
+        let Attendance = parseFloat(document.getElementById(`LabAttendence`).value);
+        let labPerformance = parseFloat(document.getElementById(`LabPer`).value);
+        let labReport = parseFloat(document.getElementById(`LabRep`).value);
+        let Project = parseFloat(document.getElementById(`Project`).value);
+
+        if(Attendance >100 || labPerformance > 25 || labReport >25 || Project>40){
+            alert("invalid Input, Fill up Carefully");
+            return;
+        }
+
+        Attendance = (10 * Attendance) / 100;
+
+        let totalMarks = Attendance + labPerformance + labReport + Project;
+
+        document.getElementById('TM').innerText = totalMarks;
+        const Points = document.getElementById('Points');
+        const Grade = document.getElementById('Grade');
+
+        if(totalMarks < 39){
+            Points.innerText = '0.00';
+            Grade.innerText = 'F'
+        }
+        else if(totalMarks <= 44){
+            Points.innerText = '2.00';
+            Grade.innerText = 'D'
+
+        }
+        else if(totalMarks <= 49){
+            Points.innerText = '2.25';
+            Grade.innerText = 'C'
+
+        }
+        else if(totalMarks <= 54){
+            Points.innerText = '2.50';
+            Grade.innerText = 'C+'
+
+        }
+        else if(totalMarks <= 59){
+            Points.innerText = '2.75';
+            Grade.innerText = 'B-'
+
+        }
+        else if(totalMarks <= 64){
+            Points.innerText = '3.00';
+            Grade.innerText = 'B'
+
+        }
+        else if(totalMarks <= 69){
+            Points.innerText = '3.25';
+            Grade.innerText = 'B+'
+
+        }
+        else if(totalMarks <= 74){
+            Points.innerText = '3.50';
+            Grade.innerText = 'A-'
+
+        }
+        else if(totalMarks <= 79){
+            Points.innerText = '3.75';
+            Grade.innerText = 'A'
+
+        }
+        else if(totalMarks >79){
+            Points.innerText = '4.00';
+            Grade.innerText = 'A+'
+
+        }
+
+
+
+        document.getElementById(`Ani1`).classList.add(`hidden`);
+        document.getElementById(`gradeSheetLab`).classList.remove(`hidden`);
+
+
     }
     
 })
