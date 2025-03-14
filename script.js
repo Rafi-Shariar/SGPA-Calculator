@@ -23,6 +23,8 @@ document.getElementById(`LabRadio`).addEventListener('click',function(){
 
 
 
+
+
 const LabAttendence = parseFloat(document.getElementById(`LabAttendence`).value);
 const LabPer = parseFloat(document.getElementById(`LabPer`).value);
 const LabRep = parseFloat(document.getElementById(`LabRep`).value);
@@ -173,6 +175,9 @@ document.getElementById(`GradCalBtn`).addEventListener(`click`,function(){
 
 
     }
+
+    const courseName = document.getElementById(`CourseName`).value;
+    document.getElementById(`course`).innerText = courseName;
     
 })
 

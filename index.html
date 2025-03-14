@@ -72,7 +72,7 @@
          <!-- Course name -->
          <div class="flex gap-4 items-center mb-5 md:mb-0">
             <label for="" class="text-lg md:text-xl font-semibold">Course Name :</label>
-            <input type="text" / class="rounded-lg p-1 w-[150px] md:w-[150px] " placeholder="" id="CourseName">
+            <input type="text"  class="rounded-lg p-1 w-[150px] md:w-[150px] " placeholder="" id="CourseName">
           </div>
 
          
@@ -191,7 +191,7 @@
 
        <!-- Grade Selector -->
         <div class="mt-5 p-2 md:p-14  rounded-lg bg-slate-300 ">
-            <h1 class="font-semibold text-xl md:text-3xl">Expected Grade in <Span>Course</Span></h1>
+            <h1 class="font-semibold text-xl md:text-3xl">Expected Grade in <Span id="course" class="text-green-700">....</Span></h1>
             
             <!-- Grading -->
              <div class="mt-7">
@@ -203,8 +203,8 @@
                     <tr>
                       <th>Point</th>
                       <th>Grade</th>
-                      <th>final</th>
-                      <th>Add to SGPA</th>
+                      <th>Marks in Final</th>
+        
                     </tr>
                   </thead>
                   <tbody class="lg:text-base md:text-center">
@@ -213,14 +213,12 @@
                       <th>4.00</th>
                       <td>A+</td>
                       <td id="G4.00">0.00</td>
-                      <td><button class="btn bg-slate-200 border-2 border-slate-500 ">add</button></td>
                     </tr>
                     <!-- 3.75 -->
                     <tr>
                       <th>3.75</th>
                       <td>A</td>
                       <td id="G3.75">0.00</td>
-                      <td><button class="btn bg-slate-200 border-2 border-slate-500">add</button></td>
                     </tr>
 
 
@@ -229,7 +227,6 @@
                         <th>3.50</th>
                         <td>A-</td>
                         <td id="G3.50">0.00</td>
-                        <td><button class="btn bg-slate-200 border-2 border-slate-500">add</button></td>
                       </tr>
 
                        <!-- 3.25 -->
@@ -237,7 +234,6 @@
                         <th>3.25</th>
                         <td>B+</td>
                         <td id="G3.25">0.00</td>
-                        <td><button class="btn bg-slate-200 border-2 border-slate-500">add</button></td>
                       </tr>
 
 
@@ -246,7 +242,6 @@
                         <th>3.00</th>
                         <td>B</td>
                         <td id="G3.00">0.00</td>
-                        <td><button class="btn bg-slate-200 border-2 border-slate-500">add</button></td>
                       </tr>
 
                        <!-- 2.75 -->
@@ -254,7 +249,6 @@
                         <th>2.75</th>
                         <td>B-</td>
                         <td id="G2.75">0.00</td>
-                        <td><button class="btn bg-slate-200 border-2 border-slate-500">add</button></td>
                       </tr>
 
                        <!-- 2.50 -->
@@ -262,7 +256,6 @@
                         <th>2.50</th>
                         <td>C+</td>
                         <td id="G2.50">0.00</td>
-                        <td><button class="btn bg-slate-200 border-2 border-slate-500">add</button></td>
                       </tr>
 
                        <!-- 2.25 -->
@@ -270,7 +263,6 @@
                         <th>2.25</th>
                         <td>C</td>
                         <td id="G2.25">0.00</td>
-                        <td><button class="btn bg-slate-200 border-2 border-slate-500">add</button></td>
                       </tr>
 
                        <!-- 2.00 -->
@@ -278,7 +270,6 @@
                         <th>2.00</th>
                         <td>D</td>
                         <td id="G2.00">0.00</td>
-                        <td><button class="btn bg-slate-200 border-2 border-slate-500">add</button></td>
                       </tr>
                    
                   </tbody>
@@ -295,7 +286,6 @@
                       <th>Total Marks</th>
                       <th>Point</th>
                       <th>Grade</th>
-                      <th>Add to SGPA</th>
                     </tr>
                   </thead>
                   <tbody class="lg:text-base md:text-center">
@@ -304,7 +294,6 @@
                       <th id="TM"></th>
                       <td id="Points"></td>
                       <td id="Grade"></td>
-                      <td><button class="btn bg-slate-200 border-2 border-slate-500 ">add</button></td>
                     </tr>
                   </tbody>
                 </table>
@@ -319,61 +308,21 @@
         </div>
 
 
-        <!-- SGPA Calculator -->
-         <div class="mt-7">
 
-          <h1 class="font-semibold text-xl md:text-3xl">SGPA</h1>
-
-          <!-- SGPA Table -->
-           <div class="mb-10">
-
-            <div class="overflow-x-auto">
-             
-              <table class="table md:p-7 md:text-center">
-                <!-- head -->
-               
-                <thead>
-                  <tr>
-                    <th>Course</th>
-                    <th>Credit</th> 
-                    <th>Grade</th>
-                    <th>point</th>
-                  </tr>
-                </thead>
-               
-                <tbody>
-                  
-                  <!-- row 1 -->
-                  <!-- <tr>
-                    <td>FMA</td>
-                    <td>3.00</td>
-                    <td>A-</td>
-                    <td>4.98</td>
-                  </tr>
-
-                  <tr>
-                    <td>FMA</td>
-                    <td>3.00</td>
-                    <td>A-</td>
-                    <td>4.98</td>
-                  </tr> -->
-                 
-                  
-                </tbody>
-              </table>
-            </div>
-
-           </div>
-
-           <!-- <div class="w-full h-12 bg-slate-400">
-
-           </div> -->
-          
-         </div>
 
             
 
 
+
+
+    </div>
+
+    <div class="mt-20 bg-slate-200">
+
+      <div class="p-12 text-center">
+        <h1>Grading is based of DIU's current grading system</h1>
+        <h1>&copy Rafi Shariar - 2025</h1>
+      </div>
 
 
     </div>
