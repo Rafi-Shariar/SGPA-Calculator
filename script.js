@@ -87,7 +87,7 @@ document.getElementById(`GradCalBtn`).addEventListener(`click`,function(){
 
         //2.00
         const cm = document.getElementById(`G2.00`);
-        if(40 - totalMarks > 0) b.innerText = (40 - totalMarks).toFixed(2);;
+        if(40 - totalMarks > 0) cm.innerText = (40 - totalMarks).toFixed(2);;
 
 
         document.getElementById(`Ani1`).classList.add(`hidden`);
